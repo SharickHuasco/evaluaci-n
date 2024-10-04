@@ -1,0 +1,109 @@
+body {
+    background-color: black;
+}
+
+p {
+    font-size: 0.9rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+}
+
+@font-face{
+    font-family: AM;
+    src:  url(/Fonts/SuffolkPunch\ Arctic\ Monkeys\ The\ Car.ttf);
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url(/Fonts/Rubik-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Newake;
+    src: url(/Fonts/NewakeFont-Demo.otf);
+}
+
+
+@font-face {
+    font-family: cool;
+    src: url(/Fonts/coolvetica\ rg.otf);
+}
+
+h1{
+    font-family: cool;
+    color: blanchedalmond;
+}
+
+ol {
+    font-size: 0.9rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+}
+
+
+nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 0%;
+    font-weight: bold;
+    color: gray;
+}
+
+ul#nav-bar li{
+    display: inline-block;
+    padding: 0px 25px;
+    font-size: 1.2rem;
+    font-family: Rubik;
+    color: gray;
+    position: relative;
+    transition: all 0.4s;
+    font-family: Cool;
+    font-size: 1.5rem;
+    
+}
+
+ul#nav-bar li:hover{
+    color:white;
+    
+    
+}
+
+ul#nav-bar li::after {
+    content: "";
+    height: 3px;
+    width: 90%;
+    background:violet;
+    position: absolute;
+    left: 12px;
+    bottom: -8px;
+    opacity: 0;
+    transition: all 0.8s;
+    pointer-events: none;
+    
+}
+
+
+
+ul#nav-bar li:hover::after {
+    opacity: 1;
+    
+    
+}
+
+#loader {
+    background:black url(/Dual\ Ball@1.25x-1.0s-200px-200px\ \(1\).gif) no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    
+
+}
+
+
+
